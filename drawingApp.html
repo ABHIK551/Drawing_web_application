@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drawing application</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="drawingApp.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/start/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <style>
+         
+      </style>
+  </head>
+  <body>
+      <div class="conatiner-fluid">
+          
+<!--           title-->
+          <div class="header">
+              Drawing App
+          </div>
+          
+<!--          inputs-->
+          <div class="input-container">
+<!--              color input-->
+              <div class="input" id="color">
+                  <input type="color" list id="paintColor">
+              </div>
+              
+<!--              Size-->
+              <div class="input" id="thicknessInput">
+                  <div id="circle"></div>
+              </div>
+              <div class="input">
+                  <div id="slider">
+                  </div>
+              </div>
+          </div>
+          
+<!--          canvas container-->
+          <div class="container">
+              <canvas id="paint" width="500px" height="400px"></canvas>
+          </div>
+          
+<!--          buttons-->
+          <div id="container2">
+<!--              Erase buttons-->
+              <div class="input2">
+                  <span class="button" id="erase">
+                  Erase</span>
+              </div>
+              <!--              Save buttons-->
+              <div class="input2">
+                  <span class="button" id="save">
+                  Save</span>
+              </div>
+              
+              <!--              Reset buttons-->
+              <div class="input2">
+                  <span class="button" id="reset">Reset</span>
+              </div>
+          </div>
+      </div>
+      <script src="drawingApp.js">
+      </script>
+  </body>
+</html>
